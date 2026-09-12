@@ -1,0 +1,73 @@
+
+/* V2 — composition matched to supplied reference */
+:root{--v2-bg:#071b29;--v2-panel:#0a2a40;--v2-line:#214e66;--v2-yellow:#ffc928;--v2-white:#f8fbfd;--v2-muted:#a9bdc8}
+html,body{background:#071b29!important}
+body{overflow-x:hidden}
+header{height:64px!important;min-height:64px!important;background:#061722!important;border-bottom:1px solid #17394c!important;padding:0 32px!important}
+.logo-group{min-width:205px}.logo-img{width:42px!important;height:42px!important}.logo-text{font-size:12px!important}
+header nav{position:absolute!important;left:50%!important;transform:translateX(-50%)!important;margin:0!important}
+header nav a{padding:21px 10px 18px!important;font-size:9px!important}
+.new-tools{margin-left:auto!important}
+
+.mountain-banner{
+ height:302px!important;min-height:302px!important;padding:0 0 0 54px!important;
+ background-image:url("assets/hero-reference.jpg")!important;
+ background-size:cover!important;background-position:center!important;
+ border:0!important;
+}
+.mountain-banner:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,20,31,.18),rgba(4,20,31,0) 58%);pointer-events:none}
+.hero-text-content{z-index:2!important;width:450px!important;max-width:450px!important}
+.mountain-banner h1{font-size:54px!important;line-height:.86!important;max-width:430px!important;letter-spacing:-.06em!important;text-transform:uppercase!important}
+.mountain-banner h1 span{font-size:51px!important;line-height:.9!important;margin-top:8px!important;color:var(--v2-yellow)!important}
+.mountain-banner .subtitle{font-size:10px!important;margin:15px 0 2px!important}
+.mountain-banner .quote{font-size:8px!important}
+.new-start{margin-top:13px!important;padding:8px 16px!important;font-size:8px!important}
+
+.subject-hub{width:calc(100% - 64px)!important;max-width:1190px!important;margin:9px auto 0!important;gap:8px!important}
+.subject-card{height:143px!important;border-radius:7px!important;border-color:#24536b!important;background:#0a2b42!important}
+.subject-card .cover{height:75px!important}
+.subject-card .body{height:68px!important;padding:8px 10px!important;position:relative}
+.subject-card h3{font-size:12px!important;margin:0 0 3px!important}
+.subject-card p{font-size:6.8px!important;line-height:1.35!important;min-height:0!important;max-width:82%;margin:0!important}
+.subject-link{position:absolute;right:8px;bottom:8px;padding:5px 9px!important;font-size:6px!important}
+
+.main-container{width:calc(100% - 64px)!important;max-width:1190px!important;padding-top:4px!important}
+.leaderboard-section{margin-top:11px!important}
+.section-title{font-size:13px!important;margin:13px 0 7px!important}
+.daily-shell .grid-3{gap:8px!important}
+.daily-shell .grid-3>.info-card{min-height:132px!important;padding:10px!important}
+.info-card h4{font-size:10px!important;margin:0 0 5px!important}.info-card p,.info-card li{font-size:7px!important;line-height:1.45!important}
+.btn-link,.btn-check{font-size:6px!important;padding:6px 10px!important}
+.leaderboard-section{padding:10px!important;border-radius:7px!important}
+.leaderboard-header h3{font-size:11px!important}
+.user-login-btn,#googleLoginBtn{min-height:30px!important;font-size:7px!important}
+.online-presence-panel{padding:5px 8px!important;margin:5px 0!important}
+.leaderboard-item{min-height:38px!important}.leaderboard-avatar-wrap,.leaderboard-avatar,.leaderboard-avatar-fallback{width:24px!important;height:24px!important}
+.media-shell{padding:9px!important;border-radius:7px!important}.media-shell .grid-3-tours{gap:7px!important}
+.virtual-tour-card{min-height:86px!important;padding:9px!important}.virtual-tour-card .icon{font-size:22px!important}.virtual-tour-card span{font-size:8px!important}
+.target-audience-section{padding:9px!important}.target-audience-grid{gap:7px!important}.audience-card{padding:8px!important}
+
+@media(min-width:761px){
+  .main-container{display:grid!important;grid-template-columns:1fr 1.13fr!important;column-gap:9px!important;align-items:start!important}
+  .main-container>.leaderboard-section{grid-column:1;grid-row:1 / span 2!important}
+  .main-container>.daily-shell{grid-column:1 / -1;grid-row:3!important}
+  .main-container>.media-shell{grid-column:2;grid-row:1!important;margin-top:11px!important}
+  .main-container>.target-audience-section{grid-column:2;grid-row:2!important;margin-top:0!important}
+  .daily-shell .grid-3{grid-template-columns:repeat(3,1fr)!important}
+}
+@media(max-width:760px){
+ header{height:56px!important;min-height:56px!important;padding:0 9px!important}
+ .mountain-banner{height:272px!important;min-height:272px!important;padding-left:13px!important;background-position:center!important}
+ .hero-text-content{width:210px!important;max-width:210px!important}
+ .mountain-banner h1{font-size:32px!important;max-width:210px!important}.mountain-banner h1 span{font-size:30px!important}
+ .mountain-banner .subtitle{font-size:7px!important;margin-top:9px!important}.new-start{padding:7px 11px!important;font-size:7px!important}
+ .subject-hub{width:calc(100% - 14px)!important;grid-template-columns:repeat(4,1fr)!important;gap:4px!important;margin-top:5px!important}
+ .subject-card{height:73px!important;border-radius:5px!important}.subject-card .cover{height:45px!important}.subject-card .body{height:28px!important;padding:5px!important}.subject-card h3{font-size:6.5px!important;margin:0!important}.subject-card p,.subject-link{display:none!important}
+ .main-container{width:calc(100% - 14px)!important;display:block!important;padding-top:3px!important}
+ .leaderboard-section,.media-shell,.target-audience-section{margin-top:7px!important}
+ .daily-shell .grid-3{grid-template-columns:1fr!important}
+ .daily-shell .grid-3>.info-card{min-height:0!important}
+ .media-shell .grid-3-tours{grid-template-columns:1fr 1fr!important}
+ .virtual-tour-card{min-height:72px!important}
+ .target-audience-grid{grid-template-columns:1fr 1fr!important}
+}
