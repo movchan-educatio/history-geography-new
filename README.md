@@ -1,1 +1,16 @@
-# history-geography-new
+# Історія і географія БЕЗ МЕЖ — NEW
+
+Нова чиста збірка порталу.
+
+## Архітектура
+- `index.html` — головна
+- `history.html` — історія
+- `geography.html` — географія
+- `nmt.html` — НМТ
+- `methodology.html` — методична скарбничка
+- `games.html` — окрема сторінка всіх ігор
+- `app.css` — єдина дизайн-система
+- `script.js`, `portal.js`, `portal-score.js` — перенесена логіка порталу
+- Firebase rules збережені
+
+Старі CSS-файли, старі ZIP-архіви та дублікати в новий репозиторій не включені.
